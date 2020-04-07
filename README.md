@@ -6,7 +6,8 @@ Mount &amp; Blade II: Bannerlord Banner Collection
 
 # 旗帜制作工具
 
-工具地址：<https://bannerlord.party/banner />
+工具地址：[https://bannerlord.party/banner](https://bannerlord.party/banner)
+
 
 使用方法：制作完旗帜复制下方的代码，按 `B` 打开旗帜编辑器后 `Ctrl + V` 粘贴即可
 
