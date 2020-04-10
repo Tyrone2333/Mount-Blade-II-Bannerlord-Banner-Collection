@@ -77,8 +77,8 @@ export const saveDir = 'screenshot'
 
         // 发送请求
         request(url, async function (error, response, body) {
-            if (!error && response.statusCode == 200) {
-                // 仅用来统计有多少代码
+            if (!error && response.statusCode === 200) {
+                // 仅用来统计有匹配到多少个代码
                 let codeList = []
                 let $ = cheerio.load(body)
                 let $postList = $('.d_post_content.j_d_post_content')
@@ -104,15 +104,6 @@ export const saveDir = 'screenshot'
 
                 console.log(`第${index}页,旗帜代码共有 ${codeList.length},所有页面过滤后有代码 ${bannerCodeList.length} 个,回复列表共用 ${$postList.length} `)
 
-                let code = '11.68.48.1836.1836.768.788.1.0.-30.527.84.84.339.364.784.784.1.1.-75.505.48.48.228.247.596.736.1.1.-64.503.84.84.73.70.608.896.1.1.-64.510.84.84.363.356.844.824.1.1.-48.510.84.84.109.488.694.692.1.1.42.510.84.84.99.245.746.672.1.1.42.510.84.84.65.205.734.636.1.1.15.510.84.84.50.194.768.642.1.1.133.505.84.84.50.100.726.668.1.1.133'
-                bannerCodeList.push(code)
-                // for (let item of bannerCodeList) {
-                //     downloadByBannerCode(browser, item).then((res) => {
-                //         console.log(res)
-                //     }).catch((res) => {
-                //         console.log(res)
-                //     }).finally(async () => await browser.close())
-                // }
                 let list = [1, 2, 3, 4, 5, 6, 7, 8]
                 // 一次开5个下载图片
                 async.mapLimit(bannerCodeList, 5, function (item, callback) {

@@ -5,7 +5,8 @@
   "main": "tiebaSpider.js",
   "scripts": {
     "tieba": "nodemon  --exec babel-node   ./tiebaSpider.js ",
-    "nodemon": "nodemon --exec babel-node --inspect  ./testttttttttttt.js"
+    "nodemon": "nodemon --exec babel-node --inspect  ./testttttttttttt.js",
+    "git-push": "git push --all"
   },
   "repository": {
     "type": "git",
