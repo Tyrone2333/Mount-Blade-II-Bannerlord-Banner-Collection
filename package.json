@@ -1,0 +1,35 @@
+{
+  "name": "nodejs-spider",
+  "version": "1.0.0",
+  "description": "use nodejs make a spider",
+  "main": "tiebaSpider.js",
+  "scripts": {
+    "tieba": "nodemon  --exec babel-node   ./tiebaSpider.js ",
+    "nodemon": "nodemon --exec babel-node --inspect  ./testttttttttttt.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tyrone2333/Mount-Blade-II-Bannerlord-Banner-Collection.git"
+  },
+  "keywords": [
+    "nodejs",
+    "spider"
+  ],
+  "author": "en20",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "cheerio": "0.18.0",
+    "fs": "0.0.2",
+    "mkdirp": "0.5.0",
+    "request": "2.51.0"
+  },
+  "dependencies": {
+    "async": "^2.1.5",
+    "md5": "^2.2.1",
+    "path": "0.12.7",
+    "puppeteer-core": "^2.1.1"
+  }
+}
