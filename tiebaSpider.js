@@ -131,7 +131,7 @@ ${item}
                     // 写入文件内容（如果文件不存在会创建一个文件）
                     // 传递了追加参数 { 'flag': 'a' }
                     // `\n\n ${new Date()} \n --- 第 ${index} 页` +
-                    fs.writeFile('./try4.md', saveFileString, {'flag': 'a'}, function (err) {
+                    fs.writeFile('./try4.md', saveFileString, {'flag': 'w'}, function (err) {
                         if (err) {
                             throw err
                         }
