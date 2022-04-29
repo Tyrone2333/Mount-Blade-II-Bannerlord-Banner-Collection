@@ -29,7 +29,7 @@
     "request": "2.88.2"
   },
   "dependencies": {
-    "async": "^2.1.5",
+    "async": "^2.6.4",
     "md5": "^2.2.1",
     "path": "0.12.7",
     "puppeteer-core": "^2.1.1"
